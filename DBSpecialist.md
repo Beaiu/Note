@@ -240,10 +240,18 @@
     * 問い合わせ
       * 結合
         ```sql
+        --結合
         {table1} JOIN {table2} USING {列名リスト}
         {table1} JOIN {table2} ON {結合条件}
+        --クロス結合
         {table1} CROSS JOIN {table2}
         SELECT * FROM T1 CROSS JOIN T2 CROSS JOIN T3
+        --内部結合
+        {table1} JOIN {table2} [USING {共通列名リスト} | ON {結合条件}]
+        --外部結合
+        {table1} LEFT [OUTER] JOIN {table2} [USING {列名リスト} | ON {結合条件}]  -- table1のすべての行+table2の結合条件を満足する行
+        {table1} RIGHT [OUTER] JOIN {table2} [USING {列名リスト} | ON {結合条件}]
+        {table1} FULL [OUTER] JOIN {table2} [USING {列名リスト} | ON {結合条件}]
         ```
   * **データ制御言語**(DCL:Data Control Language)
 ***
