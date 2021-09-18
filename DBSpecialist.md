@@ -253,6 +253,16 @@
         {table1} RIGHT [OUTER] JOIN {table2} [USING {列名リスト} | ON {結合条件}]
         {table1} FULL [OUTER] JOIN {table2} [USING {列名リスト} | ON {結合条件}]
         ```
+    * 副問合せ
+      * **ALL/SOME/ANY**：副問合せの結果いずれかに一致にしたい場合に利用
+      * **EXIST**
+    * 複数のSELECT文の結果の併合
+      ```sql
+      {SELECT文1} UNION {SELECT文2}      --1または2に含まれる行（重複無）
+      {SELECT文1} UNION ALL {SELECT文2}  --重複を排除せずに抽出する場合に利用
+      {SELECT文1} INTERSECT {SELECT文2}  --1及び2に含まれる行
+      {SELECT文1} EXCEPT {SELECT文2}     --1に含まれるが、2には含まれない行
+      ```
   * **データ制御言語**(DCL:Data Control Language)
 ***
 * **DRM** (Data Resource Management): データ資源管理（電子化された情報のみを共有資源とみなして管理を行う）
