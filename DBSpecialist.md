@@ -225,7 +225,7 @@
       * UNIQUE制約
       * NOT NULL制約（列制約、テーブル制約にはない）
       * CHECK制約
-      * **FOREIGN KEY制約**：ON DELETEおよびON UPDATEで、参照先テーブルで参照行の削除や更新が行われたときのアクション（NO ACTION, RESTRICT, CASCADE, SET DEFAULT, SET NULL）を指定する。
+      * **FOREIGN KEY制約**：ON DELETEおよびON UPDATEで、参照先テーブルで参照行の削除や更新が行われたときのアクション（NO ACTION, RESTRICT(default), CASCADE, SET DEFAULT, SET NULL）を指定する。
     * CREATE VIEW文
       * 最後にWITH CHECK OPTIONを書けば、ビューのデータ操作を制限することができる。このオプションを指定せずにビューを作成した場合、そのビューからは見ることができない行の挿入や更新をビューに対して行うことができる。
       * 実テーブルのデータを直接参照していない場合、ビューに対する更新は出来ない例
