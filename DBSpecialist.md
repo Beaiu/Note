@@ -424,3 +424,14 @@
   * S/MIME (Secure MIME)：ハイブリッド暗号方式を採用している電子メールを盗聴や改ざんなどから守るための技術
   * AES (Advanced Encryption Standard)：アメリカ合衆国の次世代暗号方式として規格化された共通鍵暗号方式です
   * IPsec (Security Architecture for IP)：通信で使用するのは共通鍵ですが、鍵の交換には公開鍵暗号方式ではなく鍵交換プロトコルIKE(Internet Key Exchange)を使用します
+  * ベイジアンフィルタ：利用者が振り分けた迷惑メールと正規のメールから特徴を学習し，迷惑メールであるかどうかを統計的に判定する。
+*  開発プロセス・手法
+  * BPEL (Business Process Execution Language)：複数のWebサービスを呼出し、実行する手順を結び合わせて一連の複雑なビジネスプロセスとして記述するための言語です。
+  * BPMN (Business Process Modeling Notation)：ビジネスプロセスモデリング表記法のこと。ビジネスプロセスをワークフローとして視覚的に表現するための手法です。
+  * ESB (Enterprise Service Bus)：SOA(サービス指向アーキテクチャ)を支えるミドルウェアで、SOAのサービスコンポーネント同士をバス型のトポロジーで接続します。ESBは、内部で様々な形式やプロトロルのメッセージの相互変換、データのルーティング、非同期連携などを行い、様々なアプリケーションの統合を支援します。
+  * SOAP (Simple Object Access Protocol)：。ソフトウェア同士がメッセージを交換する遠隔手続き呼び出し(RPC)のためのプロトコルです。汎用なデータ形式であるXMLに基づいて記述されます。
+* 知的財産適用管理
+  * DTCP-IP (Digital Transmission Content Protection over IP)：著作権保護されたディジタルコンテンツを伝送するための暗号化技術であるDTCPを、主にAV機器を含む家庭内LANなどのIPネットワークで使用できるようにした規格です。DTLAが発行する証明書を用いて相互認証を行い、コンテンツ保護が行えることが確認したときのみ録画・再生が可能となる仕組みになっています。
+  * CPRM (Content Protection for Recordable Media)：BSデジタル放送や地上デジタル放送に採用され，コピーワンスの番組を録画するときに使われる方式。
+  * CSS (Content Scramble System)：DVDに採用され，映像コンテンツを暗号化して，複製できないエリアにその暗号化鍵を記録する方式。
+  * HDCP (High-bandwidth Digital Content Protection)：HDMI端子が搭載されたディジタルAV機器に採用され，HDMI端子から表示機器にディジタル信号を送るときに受信する経路を暗号化する方式。
