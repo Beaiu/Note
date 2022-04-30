@@ -479,11 +479,85 @@
               echo "1、2以外が入力されました";;
     esac
     ```
+  * 繰り返し
+    * for文
+    ```shell
+    for 変数 in 値のリスト
+    do
+      処理
+    done
+    
+    #例：lsの実行結果を代入し、ループが実行される
+    for i in `ls`
+    ```
+  * while/until文
+  ```shell
+  while 条件式
+  do
+    処理
+  done
+  until 条件式
+  do
+    処理
+  done
+  ```
+* select文
+  * ユーザに対し数値による入力を促します
+  * break（繰り返しを終了）やcontinue（繰り返しの先頭に戻す）で繰り返しを制御することができる
+  ```shell
+  select 変数 in リスト
+  do
+    処理
+  done
+
+  #例1
+  select name in "apple" "banana" "orange"
+  do
+    echo "You selected $name";
+  done
+
+  #例2
+  while true
+  do
+    echo "Continue? (y/n)"
+    read input
+    case $input in
+      n) break
+        ;;
+      y) continue
+        ;;
+      *) echo "Please input y or n."
+        ;;
+    esac
+  done
+  ```
+* サブルーチン（関数）
+  * 引数は関数の内部で$1, $2で参照することができる
+  ```shell
+  #Type1
+  function 関数名
+  {
+    処理
+  }
+  #Type2
+  関数名（）
+  {
+    処理
+  }
+
+  #結果を返すときはreturn文を実行する
+  return 変数名
+  ```
+* デバッグ
+  * shコマンドに「-x」オプションを付けて引数にシェルスクリプトを指定すると、コマンドや変数の中身を表示しながらスクリプトを実行します。（例：``sh -x ./sample.sh``）
 
 ***
 ***
 
 ## 7.ネットワークの設定と管理
+* IPアドレスの確認：``ping ターゲット``
+  * 「-c」オプションを付けて、pingを発行する回数を指定することもできる
+
 ## 8.ファイル管理 
 
 .bashrc > alias (name)="blabla"
